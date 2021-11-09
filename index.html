@@ -1,105 +1,43 @@
 <!DOCTYPE html>
-<html style="background-color: #f0f0f0;">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>El Chilas Pelas</title>
-    <link rel="shortcut icon" href="https://tawk.to/public/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="https://tawk.to/public/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="https://tawk.to/public/style/compact.css" />
-
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">
-.company-link {
-  color : #00a4ed;
-}
-    </style>
-    <script type="text/javascript" src="https://tawk.to/public/scripts/jquery.js"></script>
-    <script type="text/javascript" src="https://tawk.to/public/scripts/page.js"></script>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width, height=device-height" />
+    <title>El Chilas Pelas | Botanas Mexicanas</title>
+    <script type="text/javascript" src="https://tawk.to/public/scripts/popout.js"></script>
     <script type="text/javascript">
-
       var Tawk_API = {
-              onLoad: function(){
-                      var dataObj = parseQueryString();
+        isPopup: true,
+          onLoad: function () {
+            var dataObj = parseQueryString();
 
-                      if (dataObj.tags !== undefined) {
-                              Tawk_API.addTags(dataObj.tags);
-                            }
+            if (dataObj.tags !== undefined) {
+              Tawk_API.addTags(dataObj.tags);
+            }
 
-                      if (dataObj.event !== undefined) {
-                              if (dataObj.attrLength !== 0) {
-                                      Tawk_API.addEvent(dataObj.event, dataObj.attributes);
-                                    } else {
-                                            Tawk_API.addEvent(dataObj.event);
-                                          }
-                            };
-
-                      $('#tawk-maximize').click(function(){
-                              Tawk_API.maximize();
-                            });
-
-                      $('#status').parent().prepend('<i class="fa fa-circle"></i>');
-                    },
-              onStatusChange: function(status){
-                      $('#status').text(status)
-                        .parent()
-                        .removeClass('online offline away')
-                        .addClass(status);
-
-                      if (status === 'online') {
-                              $('.status').show();
-                            } else {
-                                    $('.status').hide();
-                                  }
-                    }
+            if (dataObj.event !== undefined) {
+              if (dataObj.attrLength !== 0) {
+                Tawk_API.addEvent(dataObj.event, dataObj.attributes);
+              } else {
+                Tawk_API.addEvent(dataObj.event);
+              }
             };
-            var Tawk_LoadStart = new Date();
-            (function(){
-                    var s1 = document.createElement("script"),
-                      s0 = document.getElementsByTagName("script")[0];
+          }
 
-                    s1.async = true;
-                    s1.src = 'https://embed.tawk.to/618aa2736bb0760a4941d951/default';
-                    s1.charset = 'UTF-8';
-                    s1.setAttribute('crossorigin','*');
-                    s0.parentNode.insertBefore(s1, s0);
-                  })();
+      }, Tawk_LoadStart = new Date();
 
-            function faviconError(el) {
-                    $(el).hide();
-                    $(el).next().show();
-                  }
+      (function(){
+        var s1=document.createElement("script"),
+          s0=document.getElementsByTagName("script")[0];
+
+        s1.async=true;
+        s1.src='https://embed.tawk.to/618aa3526bb0760a4941d970/1fk2orvgn';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+
+        s0.parentNode.insertBefore(s1,s0);
+      })();
     </script>
-
   </head>
-  <body style="background-color: #f0f0f0;">
-    <div class="theme-1 container">
-      <div class="main-container">
-        <div class="header-info">
-          <img class="avatar" src="https://tawk.link/thumb/618aa2736bb0760a4941d951/var/page-images/giXWHRfUTK.png?width=95&height=95" onerror="this.onerror=null;this.src='https://tawk.to/public/images/default-image.svg';" alt="El Chilas Pelas" title="El Chilas Pelas">
-          <div class="header-content-wrapper">
-            <div class="name wrap">
-              <span class="page-name">El Chilas Pelas</span>
-            </div>
-            <div class="slogan-container">
-              <div class="slogan"><i></i></div>
-            </div>
-            <div class="status">
-              <span id="status"></span>
-            </div>
-          </div>
-        </div>
-        <div class="info">
-          <div class="buttons">
-            <button id="tawk-maximize" style="background-color: #00a4ed;color: #fff; border-color: #00a4ed" class="btn btn-primary"><i class="fa fa-comment"></i> Enviame un mensaje</button>
-          </div>
-          <p class="description"></p>
-          <div class="links">
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+  <body style="margin: 0px;"></body>
 </html>
