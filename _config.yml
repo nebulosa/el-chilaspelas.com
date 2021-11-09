@@ -1,0 +1,21 @@
+domain:      el-chilaspelas.com
+title:       "El Chilaspelas"
+url:         "el-chilaspelas.com"
+author:      "El Chilaspelas"
+description: "Dulces y botanas méxicanas"
+
+twitter:
+  username: el.chilaspelas
+
+source:      .
+destination: ./_site
+plugins_dir: ./_plugins
+
+plugins:
+  - jekyll-seo-tag
+
+safe:        false
+future:      true
+lsi:         true
+highlighter: rouge
+markdown:    kramdown
